@@ -1,0 +1,19 @@
+{
+  "type": "mariadb",
+  "host": "localhost",
+  "port": "3306",
+  "username": "root",
+  "password": "root",
+  "database": "personalFinance",
+  "entities": [
+      "build/entity/**/*.js"
+  ],
+  "synchronize": false,
+  "migrations": [
+      "build/migration/**/*.js"
+  ],
+  "cli": {
+      "entitiesDir": "src/entity",
+      "migrationsDir": "src/migration"
+  }
+}
